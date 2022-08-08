@@ -10,6 +10,8 @@ Then run the project by
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+### After adding the `todo list` you can drag and drop the list items
+
 ### Here are some screenshot
 
 1. ![screenshot](screenshots/1.png)
