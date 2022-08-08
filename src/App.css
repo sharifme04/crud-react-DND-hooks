@@ -1,38 +1,91 @@
-.App {
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ .App {
+  font-family: sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.App .navbar {
+  width: 100%;
+  min-height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  background: #0d6efd;
+}
+
+.App .navbar .nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.App .navbar .nav-links>a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  margin-bottom: 1rem;
+}
+
+.toDo-container {
+  margin: auto;
+  width: 400px;
+}
+
+.form-control{
+  width: 400px;
+  margin-bottom: 5px;
+}
+
+form {
+ margin-bottom: 30px;
+ margin-top: 20px;
+}
+.custom-button{
+  width: 400px;
+}
+
+.empty-text {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  margin-top: 100px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  padding: 10px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.spinner{
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-link{
+  --bs-btn-font-weight: 400;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-border-color: transparent;
+  --bs-btn-box-shadow: none;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  text-decoration: none;
 }
