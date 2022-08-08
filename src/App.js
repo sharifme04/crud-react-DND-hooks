@@ -9,7 +9,7 @@ import Spinner from "./app/components/Spinner";
 
 const App = () => {
   const navigate = useNavigate();
-  const [isPending, startTransition] = useTransition({ timeoutMs:30000 });
+  const [isPending, startTransition] = useTransition({ timeoutMs:3000 });
 
   const goToPage = (url) => {
     startTransition(() => {
@@ -17,7 +17,6 @@ const App = () => {
     });
   };
 
-  console.log(isPending);
   return (
     <div className="App">
       <Navbar goToPage={goToPage} />
