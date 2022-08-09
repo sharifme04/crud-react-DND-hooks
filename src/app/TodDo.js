@@ -59,7 +59,6 @@ const TodDo = () => {
   };
 
   const moveCard = useCallback((dragIndex, hoverIndex) => {
-    debugger;
     setCards((prevCards) =>
       update(prevCards, {
         $splice: [
